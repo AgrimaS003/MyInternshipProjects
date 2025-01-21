@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <header>
+        <h1>Add a New Recipe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="profile.html">Profile</a>
+            <a href="add-recipe.html">Add Recipe</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="add-recipe-form">
+                <input type="text" id="title" placeholder="Recipe Title" required>
+                <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+                <textarea id="instructions" placeholder="Instructions" required></textarea>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+    </main>
+    <script src=" script.js"></script>
+</body>
+</html>

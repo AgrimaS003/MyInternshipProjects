@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #6F4C3E; /* Mocha color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+#search {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    flex: 1; /* Allow the input to take available space */
+}
+
+#search-button {
+    background-color: #6F4C3E; /* Mocha color */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Keep padding for consistency */
+    cursor: pointer;
+    border-radius: 4px;
+    width: 15%; /* Set width to 15% */
+}
+
+#search-button:hover {
+    background-color: #5b3e32; /* Darker mocha color */
+}
+
+.form-container {
+    background-color: #D7B49B; /* Mocha background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6F4C3E; /* Mocha color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b3e32; /* Darker mocha color */
+}
+
+#recipe-list, #saved-recipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    border: 2px solid #6F4C3E; /* Brown border */
+    background-color: #D7B49B; /* Mocha background */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33% - 40px);
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
